@@ -1,0 +1,133 @@
+<div class="container">
+  <h2 class="my-4" style="font-family: kavoon;">Digital Planners</h2>
+  <div class="row g-4"> <!-- Row for the product cards -->
+    <ng-container *ngFor="let category of productsCategory">
+      <ng-container *ngIf="category.categoryName === 'Digital Planners'">
+        <ng-container *ngFor="let product of category.products">
+          <div class="col-md-3"> <!-- Adjust column size for four cards per row -->
+            <div class="card" style="width: 18rem;">
+              <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">PHP {{ product.price }}</p>
+                <p class="card-description">{{ product.description }}</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+
+  <h2 class="my-4" style="font-family: kavoon;">Journals</h2>
+  <div class="row g-4">
+    <ng-container *ngFor="let category of productsCategory">
+      <ng-container *ngIf="category.categoryName === 'Digital Journals'">
+        <ng-container *ngFor="let product of category.products">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">PHP {{ product.price }}</p>
+                <p class="card-description">{{ product.description }}</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+
+  <h2 class="my-4" style="font-family: kavoon;">Kids' Workbooks</h2>
+  <div class="row g-4">
+    <ng-container *ngFor="let category of productsCategory">
+      <ng-container *ngIf="category.categoryName === 'Kids Workbook'">
+        <ng-container *ngFor="let product of category.products">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">PHP {{ product.price }}</p>
+                <p class="card-description">{{ product.description }}</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+
+  <h2 class="my-4" style="font-family: kavoon;">Educational Printables</h2>
+  <div class="row g-4">
+    <ng-container *ngFor="let category of productsCategory">
+      <ng-container *ngIf="category.categoryName === 'Educational Printables'">
+        <ng-container *ngFor="let product of category.products">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">PHP {{ product.price }}</p>
+                <p class="card-description">{{ product.description }}</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+
+  <h2 class="my-4" style="font-family: kavoon;">Business Printables</h2>
+  <div class="row g-4">
+    <ng-container *ngFor="let category of productsCategory">
+      <ng-container *ngIf="category.categoryName === 'Business Printables'">
+        <ng-container *ngFor="let product of category.products">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">PHP {{ product.price }}</p>
+                <p class="card-description">{{ product.description }}</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+
+  <h2 class="my-4" style="font-family: kavoon;">Event and Party Printables</h2>
+  <div class="row g-4">
+    <ng-container *ngFor="let category of productsCategory">
+      <ng-container *ngIf="category.categoryName === 'Event and Party Printables'">
+        <ng-container *ngFor="let product of category.products">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">PHP {{ product.price }}</p>
+                <p class="card-description">{{ product.description }}</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

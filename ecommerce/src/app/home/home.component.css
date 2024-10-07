@@ -1,0 +1,431 @@
+/* Hero Banner Section */
+.hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #677D6A;
+  padding: 40px;
+  color: white;
+  font-family: 'Katibeh', cursive; /* Default font for paragraph and button */
+}
+
+.banner-content {
+  max-width: 50%;
+}
+
+.banner-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Kavoon', cursive; /* Font for the header */
+  margin-left: 20%; /* Default margin for larger screens */
+}
+
+.banner-content p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Katibeh', cursive; /* Font for the paragraph */
+  margin-left: 20%; /* Default margin for larger screens */
+}
+
+.learn-more-btn {
+  background-color: #1A3636;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: 'Katibeh', cursive; /* Font for the button */
+  margin-left: 20%;
+}
+
+.learn-more-btn:hover {
+  background-color: #ffffffb3;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive for Tablets & Mobile Screens */
+@media (max-width: 768px) {
+  .hero-banner {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .banner-content {
+    max-width: 100%;
+    margin: 0 auto; /* Center the content on smaller screens */
+  }
+
+  .banner-content h1 {
+    font-size: 28px;
+    margin-left: 0; /* Remove margin on small screens */
+  }
+
+  .banner-content p {
+    font-size: 18px;
+    margin-left: 0; /* Remove margin on small screens */
+  }
+
+  .learn-more-btn {
+    margin-left: 0; /* Center the button */
+    padding: 10px 18px; /* Adjust button size for smaller screens */
+    font-size: 14px; /* Reduce button text size */
+  }
+
+  .banner-image {
+    max-width: 100%; /* Ensure image takes full width */
+    margin-top: 20px; /* Add spacing between content and image */
+  }
+}
+
+/* Even smaller screens like mobile */
+@media (max-width: 480px) {
+  .hero-banner {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .banner-content h1 {
+    font-size: 22px; /* Further reduce font size for small devices */
+  }
+
+  .banner-content p {
+    font-size: 16px; /* Reduce paragraph font size */
+  }
+
+  .learn-more-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+/* Featured Products Section */
+.featured-products {
+  background-color: #FFF8E8;
+  padding: 40px 0;
+}
+
+.section-title {
+  font-family: 'Kavoon', cursive;
+  color: #343331;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* Featured Product Cards */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.card-body {
+  color: #343331;
+}
+
+.card-title {
+  font-family: 'Katibeh', cursive;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.price {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #343331;
+}
+
+.btn-primary {
+  background-color: #F7B195;
+  border: none;
+  font-family: 'Katibeh', cursive;
+}
+
+.btn-primary:hover {
+  background-color: #F5A583;
+}
+
+.shadow-img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.view-more {
+  color: #343331;
+  font-family: 'Katibeh', cursive;
+  font-size: 32px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.view-more:hover {
+  color: #1A3636;
+}
+
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 30px; /* Further reduce title font size for mobile devices */
+  }
+
+  .card {
+    margin-bottom: 15px; /* Reduce space between cards on mobile */
+    width: 60%; /* Make the card full-width on mobile */
+    margin-left: 0; /* Reset margin */
+    margin-right: 0; /* Reset margin */
+  }
+
+  .card-title {
+    font-size: 28px; /* Smaller title font */
+  }
+
+  .price {
+    font-size: 20px; /* Adjust price font size */
+  }
+
+  .btn-primary {
+    font-size: 18px; /* Make button font size smaller */
+    padding: 6px 10px; /* Reduce padding for mobile devices */
+  }
+
+  .view-more {
+    font-size: 36px; /* Smaller view-more text */
+  }
+  
+  /* Stack cards vertically */
+  .card {
+    width: 80%; /* Make sure cards are full-width on mobile */
+    margin-left: 50px;
+  }
+}
+
+
+/* Testimonials Section */
+.testimonial-section {
+  background-color: #FFF8E8;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+/* Section Heading */
+.section-heading {
+  font-family: 'Kavoon', cursive;
+  font-size: 36px; /* Increased size */
+  margin-bottom: 40px;
+  color: #4b3832;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center the heading */
+  /* Remove underline */
+  border-bottom: none;
+}
+
+
+/* Testimonial Card */
+.testimonial-card {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin-top: 20px;
+  padding: 30px 40px;
+  width: 80%; /* Increased width */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background-color: #ffffff;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  transform-origin: center center; /* Expand from the center */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Quotation Mark: Fixed to Top-Right */
+.quotation-mark-img {
+  position: absolute;
+  top: 15px; /* Controls the vertical position */
+  right: 15px; /* Controls the horizontal position */
+  width: 60px; /* Adjust size as needed */
+  opacity: 0.5; /* Lighter opacity */
+  z-index: 1;
+  height: 85px;
+  width: 120px;
+}
+
+/* Testimonial Image */
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #ffcf99;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-img:hover {
+  transform: rotate(-15deg);
+}
+
+/* Carousel Control Styles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #4b3832;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.carousel-control-prev-icon.custom-arrow,
+.carousel-control-next-icon.custom-arrow {
+  background-image: none;
+}
+
+.carousel-control-prev-icon.custom-arrow::before {
+  content: '\f053'; /* Font Awesome left arrow */
+  font-family: 'Font Awesome 5 Free';
+  color: #ffffff;
+  font-weight: 900;
+  padding-top: 20px;
+}
+
+.carousel-control-next-icon.custom-arrow::before {
+  content: '\f054'; /* Font Awesome right arrow */
+  font-family: 'Font Awesome 5 Free';
+  color: #ffffff;
+  font-weight: 900;
+  padding-top: 20px;
+}
+
+/* Ensure carousel container allows overflow */
+.carousel-inner {
+  overflow: visible;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Star Rating */
+.testimonial-rating {
+  color: #ffc107;
+  margin-top: 10px;
+}
+
+.fa-solid.fa-star {
+  color: #ffb400;
+  margin-right: 2px;
+}
+
+/* Increase Client Name Font Size */
+.card-title {
+  font-size: 32px; /* Adjust as needed */
+  font-weight: bold;
+  color: #4b3832; /* Optional: change the color */
+  transition: font-size 0.3s ease;
+}
+
+/* Font Change for Testimonial Statement */
+.card-text {
+  font-family: 'Katibeh', sans-serif; /* Change the font family */
+  font-size: 20px; /* Adjust the size if needed */
+  line-height: 1.2; /* Set to a smaller value to reduce the space */
+  color: #333; /* Optional: change the color */
+}
+
+/* Style for the subtitle labels */
+.card-subtitle {
+  font-family: 'Katibeh', sans-serif; /* Change font family to match overall style */
+  font-size: 22px; /* Adjust font size */
+  font-weight: 500; /* Make the text a bit bolder */
+  color: #6c757d; /* Optional: change color for better contrast */
+  margin-bottom: 10px; /* Adjust spacing below the subtitle */
+  letter-spacing: 0.5px; /* Optional: add slight spacing between letters */
+  font-style: italic; /* Make text italic */
+}
+
+/* Date Style */
+.card-text small {
+  font-family: 'Katibeh', sans-serif; /* Change font family */
+  font-size: 18px; /* Slightly smaller size */
+  color: #999; /* Optional: change the color */
+}
+
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    width: 100%; /* Full width on mobile */
+    padding: 15px; /* Further reduce padding */
+  }
+
+  .card-title {
+    font-size: 20px; /* Further reduce title size for mobile */
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 16px; /* Further reduce testimonial text size for mobile */
+    text-align: center;
+  }
+
+  .card-subtitle {
+    font-size: 16px; /* Further reduce subtitle size for mobile */
+    text-align: center;
+  }
+
+  .testimonial-img {
+    width: 100px; /* Smaller image size for mobile */
+    height: 100px;
+  }
+
+  .quotation-mark-img {
+    width: 70px; /* Further adjust size of quotation mark for mobile */
+    height: 60px; /* Adjust height accordingly */
+  }
+
+  /* Star Rating */
+.testimonial-rating {
+  color: #ffc107;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* Carousel Control Styles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #4b3832;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
+}
+
+.carousel-control-prev-icon.custom-arrow::before {
+  content: '\f053'; /* Font Awesome left arrow */
+  font-family: 'Font Awesome 5 Free';
+  color: #ffffff;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.carousel-control-next-icon.custom-arrow::before {
+  content: '\f054'; /* Font Awesome right arrow */
+  font-family: 'Font Awesome 5 Free';
+  color: #ffffff;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+}
