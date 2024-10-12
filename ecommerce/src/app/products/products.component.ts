@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Product, ProductCategory } from '../models/product.model';  // Correct relative path
+import { Product, ProductCategory } from '../models/product.model'; // Correct relative path  // Correct relative path
 
 @Component({
   selector: 'app-products',
