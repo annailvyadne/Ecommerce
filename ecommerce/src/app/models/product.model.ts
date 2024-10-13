@@ -1,10 +1,13 @@
-export class Product {
-  constructor(
-    public id: number,
-    public name: string,
-    public price: number,
-    public description: string,
-    public category: string,
-    public imageUrl: string
-  ) {}
+// product.model.ts
+export interface Product {
+  name: string;
+  category: string;
+  price: number;
+  description: string;
+  imageUrl: string;
+}
+
+export interface ProductCategory {
+  categoryName: string;
+  products: Product[];
 }
